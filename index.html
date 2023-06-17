@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Converter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header id="home">
+            UNIT CONVERSIONS
+            <nav>
+                <a href="#temp" id="nav-links"><h4>Temperature</h4></a>
+                <a href="#wt" id="nav-links"><h4>Weight</h4></a>
+            </nav>
+        </header>
+        <section>
+            <div id="temp">
+                <fieldset id="temp">
+                    <legend>Temperature</legend>
+                    <label for="Temperature">Celsius</label><br>
+                    <input type="number" id="c"><br>
+                    <button onclick="temp()">convert</button><br>
+                    <label for="Temperature">Fahrenheit</label><br>
+                    <input type="number" id="f">
+                </fieldset>
+                To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+            </div>
+            <br>
+            <div id="wt">
+                <fieldset id="wt">
+                    <legend>Weight</legend>
+                    <label for="Weight">Kilogram</label><br>
+                    <input type="number" id="kg"><br>
+                    <button onclick="wt()">convert</button><br>
+                    <label for="Weight">Pounds</label><br>
+                    <input type="number" id="p">
+                </fieldset>
+                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+            </div>
+        </section>
+        <div class="end">
+            <a href="#home">
+                <i class="fa fa-home fa-fw" style="font-size:30px;"></i>
+            </a>
+        </div>
+    </body>
+</html>
